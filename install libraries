@@ -1,0 +1,14 @@
+pip install nltk
+pip install newspaper3k
+
+from newspaper import Article
+import random
+import string 
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import nltk
+import numpy as np
+import warnings
+warnings.filterwarnings('ignore')
+
+nltk.download('punkt', quiet=True)
