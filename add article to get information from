@@ -1,0 +1,7 @@
+
+article = Article('https://www.drugs.com/medical_conditions.html')
+article.download()
+article.parse()
+article.nlp()
+corpus = article.text
+print(corpus)
