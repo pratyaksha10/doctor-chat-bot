@@ -1,0 +1,13 @@
+print("Doc Bot: I am DOCTOR BOT or Doc Bot for short. I will answer your queries . If you want to exit, type Bye!")
+exit_list = ['exit', 'see you later','bye', 'quit', 'break']
+while(True):
+
+    user_input = input()
+    if(user_input.lower() in exit_list):
+      print("Doc Bot: hope you got your answer !")
+      break
+    else:
+      if(greeting_response(user_input)!= None):
+        print("Doc Bot: "+greeting_response(user_input))
+      else:
+        print("Doc Bot: "+bot_response(user_input)
